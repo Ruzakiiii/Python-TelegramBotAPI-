@@ -183,6 +183,15 @@ def text(message):
 
         bot.register_next_step_handler(message, get_about)
 
+    if message.text == 'Поиск':
+        key = types.InlineKeyboardMarkup(row_width=2)
+
+        itemi1 = types.InlineKeyboardButton(text='Поиск', switch_inline_query_current_chat='')
+
+        key.add(itemi1)
+
+        bot.send_message(message.from_user.id, 'Для поиска нажмите кнопку ниже ⤵️', reply_markup=key)
+
     if message.text == 'Мой профиль':
         profil(message)
 
