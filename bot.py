@@ -3,7 +3,7 @@ from telebot import types
 import requests
 import data
 
-bot = telebot.TeleBot('5226037552:AAHDSCfeWaw5yTcfExeQozhoGf7vZtD9gi4')
+bot = telebot.TeleBot('API_KEY')
 
 users = {}
 
